@@ -1,0 +1,14 @@
+.carausel {
+    width: 10%;
+    height: 205px;
+    background-color: #ddbec0;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.carausel .slide {
+    display: inline-block;
+    border: 2px solid rgba(57, 141, 57, 0.842);
+    border-spacing: 3px;
+}

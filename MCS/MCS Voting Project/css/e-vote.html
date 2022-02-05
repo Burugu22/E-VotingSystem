@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Moses Maina, Samuel Mwangi, Benson Ochieng, Rolyings Ochieng">
+
+    <title>E-Voting</title>
+    <link rel="stylesheet" href="TLogin.css">
+    <link rel="stylesheet" href="evote.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional Bootstrap Theme -->
+    <link href="data:text/css;charset=utf-8," data-href="../dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+
+    <!-- Documentation extras -->
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+    <link rel="icon" href="./logo1.jpg">
+
+    <script>
+        function check() {
+            const p1 = document.getElementById("p1").value;
+            const p2 = document.getElementById("p2").value;
+            if (p1 != p2) {
+                document.write("The Passwords You've Entered Do Not Match");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="whole">
+        <div class="header1">
+            <div class="h">
+                <marquee behavior="" direction="">
+                    <div class="hl">
+                        <img src="logo1.jpg" height="50px" alt="">
+                        <span class="hd"> GOVERNMENT OF KENYA</span>
+                        <img src="logo1.jpg" height="50px" alt="">
+
+                    </div>
+                </marquee>
+            </div>
+            <div class="navbar">
+
+                <div class="content">
+                    <span style="font-weight: 900;font-size: 18px;color: green;">E-Voting </span><span style="font-weight: 900;font-size: 18px;" class="usee"> Login Page</span> <span class="glyphicon glyphicon-user"></span>
+                    <hr style="border: 1px solid rgb(51, 46, 46);"></hr>
+
+                    <div class="boox">
+                        <div class="box1">
+                            <div class="content1">
+
+                                <div class="log">
+                                    <h3 style="font-weight: bold;">Login Details
+                                        <sup><span class="glyphicon glyphicon-asterisk" style="color: red;font-size: 10px;"></span></sup></h2>
+
+                                        <form action="login.php" method="POST">
+                                            <label for="user">ID_No:</label><br>
+                                            <input type="text" name="user" required="required" placeholder="Enter Your ID_No:">
+
+                                            <br><label for="paswrd">Password</label><br>
+                                            <input type="password" required="required" name="ps" placeholder="Enter Password">
+
+
+                                            <div class="form-group">
+
+                                                <a href="http://forgetpswd.php">Forgot password</a><br>
+
+
+
+                                            </div>
+
+                                            <input class="btn1" type="submit" value="Login">
+                                            <br><br><br>
+                                            <input class="btn1" type="button" value="Create New Account" onclick="crt()">
+                                        </form>
+                                </div>
+
+                                <div class="create">
+                                    <h3 style="font-weight: bold;">Sign In Details
+                                        <sup><span class="glyphicon glyphicon-asterisk" style="color: red;font-size: 10px;"></span></sup></h2>
+
+                                        <form action="register.php" method="POST">
+                                            <label for="user">Names</label><br>
+                                            <input type="text" name="name" required="required" placeholder="Names: Use Id Format ">
+                                            <br><label for="paswrd">Id No.</label><br>
+                                            <input type="number" required="required" name="id" placeholder="Enter Id No.">
+                                            <br><label for="paswrd">Phone</label><br>
+                                            <input type="number" required="required" name="phone" placeholder="Enter Phone No."><br><br>
+                                            <label for="">Select County</label><br>
+                                            <select name="county" id="">
+                                            <option value="Nairobi">Nairobi</option>
+                                            <option value="Kiambu">Kiambu</option>
+                                            <option value="Machakos">Machakos</option>
+                                            </select><br><br>
+                                            <label for="">Select Constituency</label><br>
+                                            <select name="constituency" id="">
+                                            <option value="Dagoretti">Dagorettii</option>
+                                            <option value="Thika">Thika</option>
+                                            <option value="Kitungulu">Kitungulu</option>
+                                            </select>
+                                            <br><br> <label for="pswrd">Password</label><br>
+                                            <input type="password" required="required" id="p1" name="pswrd" placeholder="Password">
+                                            <br><label for="paswrd">Confirm Password</label><br>
+                                            <input type="password" required="required" id="p2" name="pswrdc" placeholder="Confirm Password">
+
+
+
+                                            <br><br><input class="btn1" type="submit" value="Register" onclick="check()">
+                                            <input class="btn1" type="submit" value="Back" onclick="back()">
+                                        </form>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright @ G.O.K All Rights Reserved<br> Designed By MCS 4.1 GROUP </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="evote.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+
+
+</body>
+
+</html>
+
+</html>
